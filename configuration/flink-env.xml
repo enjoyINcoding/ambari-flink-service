@@ -37,9 +37,9 @@
 # Common
 #==============================================================================
 
-jobmanager.rpc.address: localhost
+#jobmanager.rpc.address: localhost
 
-jobmanager.rpc.port: 6123
+#jobmanager.rpc.port: 6123
 
 #jobmanager.heap.mb: 256
 
@@ -49,9 +49,9 @@ taskmanager.numberOfTaskSlots: 1
 
 parallelism.default: 1
 
-taskmanager.memory.flink.size: 1g
+taskmanager.memory.process.size: 1g
 
-jobmanager.memory.flink.size: 512m
+jobmanager.memory.process.size: 512m
 
 
 
@@ -120,7 +120,6 @@ state.backend: jobmanager
 #
 # fs.hdfs.hadoopconf: /path/to/hadoop/conf/
 env.java.home: /opt/jdk1.8
-taskmanager.memory.fraction: 0.6
 env.java.opts: -XX:+UseG1GC
   </value>
   <description>Template for flink-conf.yaml</description>
