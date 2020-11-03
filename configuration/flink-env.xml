@@ -49,6 +49,12 @@ taskmanager.numberOfTaskSlots: 1
 
 parallelism.default: 1
 
+taskmanager.memory.flink.size: 1g
+
+jobmanager.memory.flink.size: 512m
+
+
+
 #==============================================================================
 # Web Frontend
 #==============================================================================
